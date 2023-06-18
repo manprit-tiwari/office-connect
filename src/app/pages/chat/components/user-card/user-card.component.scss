@@ -1,0 +1,105 @@
+:host{
+    width: -webkit-fill-available;
+}
+
+li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: inherit;
+    gap: 0.8rem;
+    color: #7d7c85;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 1rem;
+    will-change: background-color;
+    transition: background-color 0.2s ease-in-out;
+
+    .profile-picture_container {
+        position: relative;
+
+        .profile-picture {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: none;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 2rem;
+            overflow: hidden;
+
+            img {
+                width: inherit;
+                height: inherit;
+                object-fit: cover;
+            }
+        }
+
+        .indicator {
+            position: absolute;
+            bottom: -0.3rem;
+            right: -0.3rem;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 1rem;
+            background-color: red;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.1rem;
+            font-size: 0.8rem;
+        }
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-grow: 1;
+
+        .user {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: -webkit-fill-available;
+            gap: 0.2rem;
+
+            .title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: inherit;
+
+                .name {
+                    flex-grow: 1;
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 1rem;
+
+                    .active-indicator {
+                        width: 0.6rem;
+                        height: 0.6rem;
+                        background-color: #97e245;
+                        display: inline-block;
+                        border-radius: 1rem
+                    }
+                }
+            }
+        }
+
+        p {
+            margin-block: 0rem;
+
+            &.last_message {
+                margin-block-start: 0.3rem;
+            }
+        }
+    }
+
+    &:is(:hover, .active) {
+        background-color: #1b1d23;
+    }
+}

@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { FormControl, FormGroup } from "@angular/forms";
+import { ChatDummyUserService } from "../../services/dummy-users/dummy-users.service";
 
 @Component({
     selector: 'chat-sidebar',
@@ -12,6 +13,10 @@ export class ChatSidebarComponent {
         'search': new FormControl("")
     });
 
-    constructor() { }
+    UserData: User[] = this.chatDummyUserService.users;
+
+    constructor(
+        private chatDummyUserService: ChatDummyUserService
+    ) { }
 
 }

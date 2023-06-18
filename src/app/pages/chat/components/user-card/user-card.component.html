@@ -1,0 +1,27 @@
+<li class="">
+    <div class="profile-picture_container">
+        <div class="profile-picture">
+            <img [src]="user.profileImage" [alt]="user.name">
+        </div>
+        <ng-container *ngIf="user.unreadCount !== 0">
+            <div class="indicator">{{user.unreadCount}}</div>
+        </ng-container>
+    </div>
+    <div class="details">
+        <div class="user">
+            <div class="title">
+                <p class="name">
+                    {{user.name}}
+                    <ng-container *ngIf="user.active">
+                        <span class="active-indicator"></span>
+                    </ng-container>
+                </p>
+                <p class="time">{{user.time}}</p>
+            </div>
+            <p class="number">
+                {{user.mobNo}}
+            </p>
+        </div>
+        <p class="last_message">{{user.lastMessage}}</p>
+    </div>
+</li>

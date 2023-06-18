@@ -1,0 +1,12 @@
+<mat-accordion multi>
+    <mat-expansion-panel expanded>
+        <mat-expansion-panel-header>
+            <mat-panel-title>Unread</mat-panel-title>
+        </mat-expansion-panel-header>
+        <ul>
+            <ng-container *ngFor="let user of userData">
+                <chat-user-card [user]="user"/>
+            </ng-container>
+        </ul>
+    </mat-expansion-panel>
+</mat-accordion>
