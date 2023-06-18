@@ -1,0 +1,5 @@
+@import './pages/chat/chat-sidebar';
+
+chat-sidebar{
+    @include chat-sidebar_mat-expansion();
+}

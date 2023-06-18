@@ -1,0 +1,38 @@
+<div class="container">
+    <form [formGroup]="searchForm">
+        <mat-icon>search</mat-icon>
+        <input type="search" placeholder="Search" formControlName="search">
+    </form>
+    <mat-accordion>
+        <mat-expansion-panel expanded="true">
+            <mat-expansion-panel-header>
+                <mat-panel-title>Unread</mat-panel-title>
+            </mat-expansion-panel-header>
+            <ul>
+                <li class="">
+                    <div class="profile-picture_container">
+                        <div class="profile-picture">
+                            <img src="../../../../../assets/avatars/avatar_1.jpg" alt="avatar_1">
+                        </div>
+                        <div class="indicator">2</div>
+                    </div>
+                    <div class="details">
+                        <div class="user">
+                            <div class="title">
+                                <p class="name">
+                                    Emily Davis
+                                    <span class="active-indicator"></span>
+                                </p>
+                                <p class="time">1:10</p>
+                            </div>
+                            <p class="number">
+                                +91 98765 43210
+                            </p>
+                        </div>
+                        <p class="last_message">Sure, I'll meet you there!</p>
+                    </div>
+                </li>
+            </ul>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
