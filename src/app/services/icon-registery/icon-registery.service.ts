@@ -12,6 +12,13 @@ export class IconRegisteryService {
         private domSanitizer: DomSanitizer
     ) { }
 
+    /**
+     * 
+     * @param name - Icon name to register SVG Image to it. It will be later used with `<mat-icon svgIcon=""></mat-icon>`
+     * To provide in matIcon property.
+     * @param path - SVG image path in assets Folder.
+     * @returns - Function which will register MatIcon in MatIconRegistry.
+     */
     registerNewMatIcon = (name: string, path: string): MatIconRegistry => {
         return this.matIconRegistery.addSvgIcon(
             name,

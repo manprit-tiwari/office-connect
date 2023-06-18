@@ -1,0 +1,8 @@
+@import '../../assets/scss/variables';
+.container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: $mainContainerHeight;
+    color: #fff;
+}

@@ -1,0 +1,47 @@
+@import '../../../../assets/scss/variables';
+
+.container {
+    height: $sidebarHeight;
+    width: 15rem;
+    background-color: #000;
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        width: inherit;
+        list-style: none;
+        margin-block: 0rem;
+        padding-inline-start: 0rem;
+        padding-block: 1rem;
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: -webkit-fill-available;
+            margin-inline: 1rem;
+            padding-inline: 1rem;
+            border-radius: 1rem;
+            color: #9a9ca0;
+            will-change: background-color, color;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+
+            .left{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: -webkit-fill-available;
+                gap: 1rem;
+            }
+
+            &:is(:hover,.active){
+                background-color: #ebff8e;
+                color: #000;
+            }
+        }
+    }
+}

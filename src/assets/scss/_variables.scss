@@ -1,0 +1,5 @@
+// Base Variable
+
+$headerHeight: 4rem;
+$mainContainerHeight: calc(100vh - $headerHeight);
+$sidebarHeight: $mainContainerHeight;
