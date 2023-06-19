@@ -8,6 +8,8 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { ChatUserCardContainerComponent } from "./components/user-card-container/user-card-container.component";
 import { ChatUserCardComponent } from "./components/user-card/user-card.component";
 import { ChatDummyUserService } from "./services/dummy-users/dummy-users.service";
+import { ChatSingleUserChatContainerComponent } from "./components/single-user-chat-container/single-user-chat-container.component";
+import { IconRegisteryService } from "src/app/services/icon-registery/icon-registery.service";
 
 
 @NgModule({
@@ -15,7 +17,8 @@ import { ChatDummyUserService } from "./services/dummy-users/dummy-users.service
         ChatComponent,
         ChatSidebarComponent,
         ChatUserCardContainerComponent,
-        ChatUserCardComponent
+        ChatUserCardComponent,
+        ChatSingleUserChatContainerComponent
     ],
     imports: [
         CommonModule,

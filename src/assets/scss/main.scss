@@ -1,5 +1,9 @@
 @import './pages/chat/chat-sidebar';
+@import './pages/chat/single-user-chat-container';
 
 chat-sidebar{
     @include chat-sidebar_mat-expansion();
+}
+chat-single-user-chat-container{
+    @include single-user-chat-container();
 }

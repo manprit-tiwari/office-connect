@@ -11,8 +11,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: $mainContainerHeight;
+        height: $chatMainContainerHeight;
         width: -webkit-fill-available;
-        background-color: #000;
+        padding-block-start: 1rem;
     }
 }

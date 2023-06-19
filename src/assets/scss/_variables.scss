@@ -3,3 +3,4 @@
 $headerHeight: 5rem;
 $mainContainerHeight: calc(100vh - $headerHeight);
 $sidebarHeight: $mainContainerHeight;
+$chatMainContainerHeight: calc($mainContainerHeight - 1rem);

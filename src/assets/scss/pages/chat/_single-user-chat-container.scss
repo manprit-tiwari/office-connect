@@ -1,0 +1,7 @@
+@mixin single-user-chat-container{
+    .mat-mdc-icon-button{
+        .mat-mdc-button-persistent-ripple{
+            border-radius: 0.8rem;
+        }
+    }
+}
