@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { IconRegisteryService } from "src/app/services/icon-registery/icon-registery.service";
+import { ChatDummyChatService } from "../../services/dummy-chat/dummy-chat.service";
 
 
 @Component({
@@ -9,8 +10,11 @@ import { IconRegisteryService } from "src/app/services/icon-registery/icon-regis
 })
 export class ChatSingleUserChatContainerComponent {
 
+    chatMessage: Message[] = this.chatDummyChatService.chatData;
+
     constructor(
         private iconRegistryService: IconRegisteryService,
+        private chatDummyChatService: ChatDummyChatService
     ) { 
         this.registerMatIcon();
     }

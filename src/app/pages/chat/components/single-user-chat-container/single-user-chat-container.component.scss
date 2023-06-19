@@ -35,18 +35,22 @@ header{
 }
 
 .main-content{
-    position: relative;
-    height: calc($chatMainContainerHeight - 3.2rem);
+    height: calc($chatMainContainerHeight - 3.3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .input-container{
-    position: absolute;
-    bottom: 1rem;
     background-color: transparent;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-block-end: 1rem;
+    padding-block-start: 0.25rem;
+
 
     form{
         width: 95%;

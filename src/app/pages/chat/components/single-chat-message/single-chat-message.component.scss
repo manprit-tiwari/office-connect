@@ -1,0 +1,38 @@
+:host {
+    width: inherit;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: inherit;
+
+    &.self {
+        justify-content: flex-end;
+
+        .message-container {
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            background-color: #c157f3;
+            color: #ffeaff;
+        }
+    }
+
+    &.other {
+        justify-content: flex-start;
+
+        .message-container {
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            background-color: #16171b;
+            color: #babbbf;
+        }
+    }
+
+    .message-container {
+        padding: 1rem;
+        max-width: 70%;
+    }
+}

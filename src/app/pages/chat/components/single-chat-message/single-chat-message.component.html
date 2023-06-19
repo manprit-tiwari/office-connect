@@ -1,0 +1,5 @@
+<div class="container" [ngClass]="{'self': message.userId === userId, 'other': message.userId !== userId}">
+    <div class="message-container" >
+        <p>{{message.message}}</p>
+    </div>
+</div>
