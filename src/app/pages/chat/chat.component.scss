@@ -13,6 +13,7 @@
         align-items: center;
         height: $chatMainContainerHeight;
         width: -webkit-fill-available;
+        width: -moz-available;
         padding-block-start: 1rem;
     }
 }

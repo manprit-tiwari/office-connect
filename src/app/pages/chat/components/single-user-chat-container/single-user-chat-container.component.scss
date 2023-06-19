@@ -2,6 +2,7 @@
 :host{
     height: $chatMainContainerHeight;
     width: -webkit-fill-available;
+    width: -moz-available;
     border-top-left-radius: 1rem;
 }
 

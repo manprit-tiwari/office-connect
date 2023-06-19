@@ -1,6 +1,15 @@
-<div class="container">
-    <ng-container *ngFor="let message of chatMessages">
-        <chat-single-chat-message [message]="message" />
-    </ng-container>
-    <!-- <h1>Welcome to OfficeConnect...</h1> -->
-</div>
+<ng-container *ngIf="chatMessages.length > 0;else noMessages">
+    <div class="container">
+        <ng-container *ngFor="let message of chatMessages">
+            <chat-single-chat-message [message]="message" />
+        </ng-container>
+        <!-- <h1>Welcome to OfficeConnect...</h1> -->
+    </div>
+</ng-container>
+<ng-template #noMessages>
+    <div class="noMessages-container">
+        <div class="noMessage">
+            <img src="../../../../../assets/images/peace.gif" alt="peace">
+        </div>
+    </div>
+</ng-template>

@@ -1,5 +1,6 @@
 :host{
     width: -webkit-fill-available;
+    width: -moz-available;
 }
 
 li {
@@ -65,6 +66,7 @@ li {
             justify-content: flex-start;
             align-items: flex-start;
             width: -webkit-fill-available;
+            width: -moz-available;
             gap: 0.2rem;
 
             .title {

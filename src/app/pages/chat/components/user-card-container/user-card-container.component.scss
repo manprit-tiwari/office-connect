@@ -1,5 +1,6 @@
 :host {
     width: -webkit-fill-available;
+    width: -moz-available;
 }
 
 ul {
@@ -12,10 +13,12 @@ ul {
     margin-block: 1rem;
     padding-inline-start: 0rem;
     width: -webkit-fill-available;
+    width: -moz-available;
 }
 
 mat-accordion {
     width: -webkit-fill-available;
+    width: -moz-available;
 
     .mat-expansion-panel {
         box-shadow: unset;

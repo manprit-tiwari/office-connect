@@ -10,5 +10,6 @@
     .main-container{
         height: inherit;
         width: -webkit-fill-available;
+        width: -moz-available;
     }
 }
