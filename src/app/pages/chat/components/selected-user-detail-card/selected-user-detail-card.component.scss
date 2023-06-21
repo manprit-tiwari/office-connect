@@ -1,0 +1,155 @@
+:host {
+    display: flex;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #6d00d4;
+    border-radius: 1rem;
+    padding: 1rem;
+
+    p {
+        margin-block: 0rem;
+    }
+}
+
+.section_1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    width: inherit;
+
+    .profile-picture {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 2rem;
+        overflow: hidden;
+
+        img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+        }
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .name {
+            font-size: 1.1rem;
+
+            .active-indicator {
+                width: 0.6rem;
+                height: 0.6rem;
+                background-color: #97e245;
+                display: inline-block;
+                border-radius: 1rem
+            }
+        }
+
+        .number {
+            color: #caafff;
+        }
+    }
+}
+
+.section_2 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+    width: inherit;
+
+    button {
+        border: none;
+        outline: none;
+        color: #fff;
+        background-color: #8b40dd;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 0.8rem;
+        cursor: pointer;
+
+        &:disabled {
+            opacity: 0.7;
+        }
+    }
+}
+
+.section_3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    p {
+        margin-block: 0rem;
+    }
+}
+
+$colors: (
+    #ff000080,
+    #00ff0080,
+    #0000ff80,
+    #ffff0080,
+    #ff00ff80
+);
+// $colorCount: 0;
+
+// Function to select a random index from an array
+@function random-index($colorCount) {
+    // @return floor(random() * length($array))+1;
+
+    @if (($colorCount % 5) == 0) {
+        @return 5;
+    }
+
+    @if $colorCount % 5 {
+        $colorCount: $colorCount % 5;
+        @return $colorCount;
+    }
+}
+
+// Function to get a random color from the set
+@function random-color($colors, $index) {
+    $index: random-index($index);
+    $clr: nth($colors, $index);
+    @return $clr;
+}
+
+.section_4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+
+    p {
+        margin-block: 0rem;
+    }
+
+    .chips-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+
+        .chip {
+            padding: 0.2rem 0.5rem;
+            // background-color: #8b52a9;
+            border-radius: 0.5rem;
+
+            @for $i from 1 to 10 {
+                &:nth-child(#{$i}) {
+                    background-color: random-color($colors,$i);
+                }
+            }
+
+        }
+    }
+}

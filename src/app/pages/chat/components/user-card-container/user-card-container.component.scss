@@ -1,6 +1,11 @@
 :host {
     width: -webkit-fill-available;
     width: -moz-available;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 ul {
@@ -40,7 +45,7 @@ mat-accordion {
             }
         }
 
-        .mat-expansion-panel-header-title{
+        .mat-expansion-panel-header-title {
             color: #7d7c85;
             font-size: 1rem;
         }

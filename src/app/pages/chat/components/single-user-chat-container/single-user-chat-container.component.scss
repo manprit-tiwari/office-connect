@@ -4,12 +4,14 @@
     width: -webkit-fill-available;
     width: -moz-available;
     border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 .container{
     background-color: #1d1d24;
     height: $chatMainContainerHeight;
     border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 header{
@@ -20,6 +22,7 @@ header{
     padding-inline: 1rem;
     background-color: #000;
     border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 
     .profile-picture{
         width: 1.5rem;

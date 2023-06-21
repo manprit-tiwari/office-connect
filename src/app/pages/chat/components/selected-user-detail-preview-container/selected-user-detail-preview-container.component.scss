@@ -1,0 +1,11 @@
+@import '../../../../../assets/scss/variables';
+:host {
+    width: 20rem;
+    height: calc($mainContainerHeight - 2rem);
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+}

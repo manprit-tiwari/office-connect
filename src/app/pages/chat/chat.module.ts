@@ -9,10 +9,11 @@ import { ChatUserCardContainerComponent } from "./components/user-card-container
 import { ChatUserCardComponent } from "./components/user-card/user-card.component";
 import { ChatDummyUserService } from "./services/dummy-users/dummy-users.service";
 import { ChatSingleUserChatContainerComponent } from "./components/single-user-chat-container/single-user-chat-container.component";
-import { IconRegisteryService } from "src/app/services/icon-registery/icon-registery.service";
 import { ChatSingleChatMessageComponent } from "./components/single-chat-message/single-chat-message.component";
 import { ChatSingleChatMessageContainerComponent } from "./components/single-chat-message-container/single-chat-message-container.component";
 import { ChatDummyChatService } from "./services/dummy-chat/dummy-chat.service";
+import { ChatSelectedUserDetailPreviewContainerComponent } from "./components/selected-user-detail-preview-container/selected-user-detail-preview-container.component";
+import { ChatSelectedUserDetailCardComponent } from "./components/selected-user-detail-card/selected-user-detail-card.component";
 
 
 @NgModule({
@@ -23,7 +24,9 @@ import { ChatDummyChatService } from "./services/dummy-chat/dummy-chat.service";
         ChatUserCardComponent,
         ChatSingleUserChatContainerComponent,
         ChatSingleChatMessageComponent,
-        ChatSingleChatMessageContainerComponent
+        ChatSingleChatMessageContainerComponent,
+        ChatSelectedUserDetailPreviewContainerComponent,
+        ChatSelectedUserDetailCardComponent
     ],
     imports: [
         CommonModule,
